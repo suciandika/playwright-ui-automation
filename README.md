@@ -5,11 +5,9 @@ This project contains automated tests for the Dealls web application using Playw
 ## Project structure
 ```
 tests/
-├── pages/                   # Page Object Models
-│   ├── base/                # Base page objects with shared functionality
-│   ├── desktop/             # Desktop-specific page implementations
-├── utils/                   # Shared utilities and helpers
-├── desktop/                 # Desktop-specific test specs
+├── desktop/            # Desktop-specific page implementations
+├── page/               # Specific page implementations
+├── utils/              # Shared utilities and helpers
 ```
 
 ## Setup
@@ -18,7 +16,7 @@ tests/
 npm install
 
 🚀 Run tests
-'''bash
+```
 #All test 
 npx playwright test
 
@@ -36,7 +34,7 @@ npx playwright show-report
 
 #env/custom variable
 ENV=production npx playwright test
-'''
+```
 
 🛠 Playwright config file
 playwright.config.ts
